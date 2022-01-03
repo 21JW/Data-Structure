@@ -27,6 +27,13 @@ void SeqListCheckCapacity(SL* ps)
 	}
 }
 
+void SeqListDestroy(SL* ps)
+{
+	free(ps->a);
+	ps->a = NULL;
+	ps->size = ps->capacity = 0;
+}
+
 void SeqListPushBack(struct SeqList* ps, SLDataType x)
 {
 	SeqListCheckCapacity(ps);

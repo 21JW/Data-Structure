@@ -20,4 +20,6 @@ void SeqListPushFront(struct SeqList* ps, SLDataType x);
 void SeqListPopFront(struct SeqList* ps);
 void SeqListInsert(struct SeqList* ps, int pos, SLDataType x);
 void SeqListErase(struct SeqList* ps, int pos);
+void SeqListDestroy(SL* ps);
+void SeqListCheckCapacity(SL* ps);
 

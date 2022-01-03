@@ -33,6 +33,7 @@ void TestSeqList1()
 	SeqListPrint(&s);
 	SeqListErase(&s, 2);
 	SeqListPrint(&s);
+	SeqListDestroy(&s);
 }
 
 void TestSeqList2()
@@ -51,6 +52,7 @@ void TestSeqList2()
 	SeqListPrint(&s);
 	SeqListErase(&s, 2);
 	SeqListPrint(&s);
+	SeqListDestroy(&s);
 }
 
 
