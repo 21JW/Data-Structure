@@ -1,0 +1,7 @@
+﻿  Single Link list.c
+C:\Users\JR\source\Data Structure\Files\Link List\Single Link List\Single Link List\Single Link List\Single Link list.c(3,40): warning C4028: 形参 1 与声明不同
+C:\Users\JR\source\Data Structure\Files\Link List\Single Link List\Single Link List\Single Link List\Single Link list.c(5,1): warning C4090: “初始化”: 不同的“const”限定符
+  test.c
+C:\Users\JR\source\Data Structure\Files\Link List\Single Link List\Single Link List\Single Link List\test.c(5,8): warning C4013: “test01”未定义；假设外部返回 int
+  正在生成代码...
+  Single Link List.vcxproj -> C:\Users\JR\source\Data Structure\Files\Link List\Single Link List\Single Link List\Debug\Single Link List.exe
