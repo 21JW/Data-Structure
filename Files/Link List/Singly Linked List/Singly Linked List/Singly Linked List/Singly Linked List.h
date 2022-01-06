@@ -18,7 +18,11 @@ void SinglyListPush_Front(SListNode** pphead, SListDatatype x);
 void SinglyListPop_Front(SListNode** pphead);
 void SinglyListPrint(const SListNode** pphead);
 SListNode* CreateSinglyListNode(SListDatatype x);
-SListNode* FindSinglyListNode(SListDatatype x);
+SListNode* FindSinglyListNode(SListNode** pphead,SListDatatype x);
+void ChangeSinglyListNode(SListNode** pphead, SListDatatype x, SListDatatype y);
+void SinglyListNodeInsert(SListNode** pphead, SListDatatype x, SListDatatype y);
+void SinglyListNodeDelete(SListNode** pphead, SListDatatype x);
+
 
 
 

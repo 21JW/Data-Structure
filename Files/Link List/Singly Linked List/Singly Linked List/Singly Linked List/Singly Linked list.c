@@ -94,7 +94,7 @@ void SinglyListPop_Front(SListNode** pphead)
 		return;
 	}
 	else if ((*pphead)->next==NULL)
-	{
+	{ 
 		/*free(*pphead);*/
 		*pphead = NULL;
 	}
@@ -107,3 +107,118 @@ void SinglyListPop_Front(SListNode** pphead)
 	}
 }
 
+SListNode* FindSinglyListNode(SListNode** pphead, SListDatatype x)
+{
+	SListNode* find = *pphead;
+	while(find!= NULL)
+	{
+		if (find->data == x)
+		{
+			return find;
+		}
+		else
+		{
+			find = find->next;
+		}
+	}
+	if (find == NULL)
+	{
+		printf("Error: data does not exist!\n");
+	}
+	return NULL;
+}
+
+void ChangeSinglyListNode(SListNode** pphead, SListDatatype x, SListDatatype y)
+{
+	SListNode* find = *pphead;
+	while (find != NULL)
+	{
+		if (find->data == x)
+		{
+			find->data=y;
+			printf("Manage to change the data!\n");
+			break;
+		}
+		else
+		{
+			find = find->next;
+		}
+	}
+	if (find == NULL)
+	{
+		printf("Error:data does not exist!\n");
+	}
+}
+
+void SinglyListNodeInsert(SListNode** pphead, SListDatatype x, SListDatatype y)
+{
+	SListNode* newNode = CreateSinglyListNode(y);
+	SListNode* find = *pphead;
+	if (*pphead == NULL)
+	{
+		printf("Error:An empty List!\n");
+	}
+	else
+	{
+		while (find != NULL)
+		{
+			if (find->data == x)
+			{
+				newNode->next = find->next;
+				find->next = newNode;
+				break;
+			}
+			else
+			{
+				find = find->next;
+			}
+		}
+		if (find == NULL)
+		{
+			printf("Error:data does not exist!\n");
+		}
+	}
+}
+
+void SinglyListNodeDelete(SListNode** pphead, SListDatatype x)
+{
+	int signal = 0;
+	if (*pphead == NULL)
+	{
+		printf("Error:An empty List!\n");
+	}
+	else if ((*pphead)->data == x)
+	{
+		SListNode* prehead = *pphead;
+		*pphead = (*pphead)->next;
+		prehead->next = NULL;
+		/*free(prehead);*/
+	}
+	else if (((*pphead)->data != x) && ((*pphead)->next == NULL))
+	{
+		printf("Error:data does not exist!\n");
+	}
+	else
+	{
+		SListNode* find = *pphead;
+		while ((find->next)!= NULL)
+		{
+			if (((find->next)->data) == x)
+			{
+				SListNode* delete = find->next;
+				find->next = find->next->next;
+				signal = 1;
+				/*free(delete);*/
+				break;
+			}
+			else
+			{
+				find = find->next;
+			}
+		}
+		if ((find->next) == NULL&&signal==1)
+		{
+			printf("Error:data does not exist!\n");
+		}
+	}
+}
