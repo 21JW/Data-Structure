@@ -16,7 +16,10 @@ typedef struct ListNode
 
 LN* CreateNewNode(Listdatatype x);
 void printList(LN* phead);
-void NodeInit(LN** pphead);
+void NodeInit1(LN** pphead);
+LN* NodeInit2();
+void ListPush_back(LN* phead, Listdatatype x);
+void ListPop_back(LN* phead);
 
 
 
