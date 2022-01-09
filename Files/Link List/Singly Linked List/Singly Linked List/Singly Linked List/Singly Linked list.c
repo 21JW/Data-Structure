@@ -55,6 +55,32 @@ void SinglyListPush_Back(SListNode** pphead, SListDatatype x)
 
 void SinglyListPop_Back(SListNode** pphead)
 {
+	if (*pphead == NULL)
+	{
+		return;
+	}
+	else if ((*pphead)->next == NULL)
+	{
+		free(*pphead);
+		*pphead = NULL;
+	}
+	else
+	{
+		SListNode* prev = NULL;
+		SListNode* tail = *pphead;
+		while (tail->next != NULL)
+		{
+			prev = tail;
+			tail = tail->next;
+		}
+		free(tail);
+		prev->next = NULL;
+	}
+}
+
+
+void SinglyListPop_Back1(SListNode** pphead)
+{
 	if ((*pphead) == NULL)
 	/*	the first case: it is an empty List.*/
 	{
@@ -188,6 +214,7 @@ void SinglyListNodeDelete(SListNode** pphead, SListDatatype x)
 		printf("Error:An empty List!\n");
 	}
 	else if ((*pphead)->data == x)
+		/*the insert after the first Node*/
 	{
 		SListNode* prehead = *pphead;
 		*pphead = (*pphead)->next;

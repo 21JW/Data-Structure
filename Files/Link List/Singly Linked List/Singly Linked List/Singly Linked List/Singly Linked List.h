@@ -14,6 +14,7 @@ typedef struct SListNode
 
 void SinglyListPush_Back(SListNode** pphead, SListDatatype x);
 void SinglyListPop_Back(SListNode** pphead);
+void SinglyListPop_Back1(SListNode** pphead);
 void SinglyListPush_Front(SListNode** pphead, SListDatatype x);
 void SinglyListPop_Front(SListNode** pphead);
 void SinglyListPrint(const SListNode** pphead);

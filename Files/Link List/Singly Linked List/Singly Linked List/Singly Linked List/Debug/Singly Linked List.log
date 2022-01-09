@@ -1,4 +1,4 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 中间目录(Debug\)包含从另一个项目(Single Link List.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
-  Singly Linked list.c
-C:\Users\JR\source\Data Structure\Files\Link List\Singly Linked List\Singly Linked List\Singly Linked List\Singly Linked list.c(3,34): warning C4028: 形参 1 与声明不同
+  test.c
+C:\Users\JR\source\Data Structure\Files\Link List\Singly Linked List\Singly Linked List\Singly Linked List\test.c(5,8): warning C4013: “test01”未定义；假设外部返回 int
   Singly Linked List.vcxproj -> C:\Users\JR\source\Data Structure\Files\Link List\Singly Linked List\Singly Linked List\Singly Linked List\Debug\Singly Linked List.exe

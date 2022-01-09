@@ -2,12 +2,12 @@
 
 int main()
 {
-	/*test01();*/
-	/*test02();*/
+	test01();
+	//test02();
 	//test03();
 	//test05();
-	/*test06();*/
-	test07();
+	//test06();
+	//test07();
 	return 0;
 }
 
