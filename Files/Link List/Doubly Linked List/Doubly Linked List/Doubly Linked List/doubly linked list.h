@@ -20,6 +20,9 @@ void NodeInit1(LN** pphead);
 LN* NodeInit2();
 void ListPush_back(LN* phead, Listdatatype x);
 void ListPop_back(LN* phead);
+void ListPush_Front(LN* phead, Listdatatype x);
+void ListPop_Front(LN* phead);
+void ListInsert(LN* phead, Listdatatype x);
 
 
 

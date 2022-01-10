@@ -66,15 +66,47 @@ void ListPop_back(LN* phead)
 	else
 	{
 		LN* tail = phead->prev->prev;
-		LN* deleteNode = phead->prev;
+		LN* delete_node = phead->prev;
 		tail->next = phead;
 		phead->prev = tail;
-		deleteNode->prev = NULL;
-		deleteNode->next = NULL;
-		free(deleteNode);
+		delete_node->prev = NULL;
+		delete_node->next = NULL;
+		free(delete_node);
 	}
 }
 
+void ListPush_Front(LN* phead, Listdatatype x)
+{
+	LN*newNode=CreateNewNode(x);
+	LN* first_node = phead->next;
+	phead->next = newNode;
+	newNode->prev = phead;
+	newNode->next = first_node;
+	first_node->prev = newNode;
+}
+
+void ListPop_Front(LN* phead)
+{
+	if (phead->next == phead)
+	{
+		printf("Error:It is an empty list. Pop_front is not allowed.\n");
+	}
+	else
+	{
+		LN* first_node = phead->next;
+		LN* second_node = phead->next->next;
+		phead->next = second_node;
+		second_node->prev = phead;
+		first_node->next = NULL;
+		first_node->prev = NULL;
+		free(first_node);
+	}
+}
+
+void ListInsert(LN* phead, Listdatatype x)
+{
+	;
+}
 
 
 

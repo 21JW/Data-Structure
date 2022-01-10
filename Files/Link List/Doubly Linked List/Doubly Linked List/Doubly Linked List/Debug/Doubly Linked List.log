@@ -1,3 +1,5 @@
 ﻿  doubly linked list.c
+  test.c
+  正在生成代码...
 C:\Users\JR\source\Data Structure\Files\Link List\Doubly Linked List\Doubly Linked List\Doubly Linked List\doubly linked list.c(48): warning C4716: “NodeInit2”: 必须返回一个值
   Doubly Linked List.vcxproj -> C:\Users\JR\source\Data Structure\Files\Link List\Doubly Linked List\Doubly Linked List\Debug\Doubly Linked List.exe

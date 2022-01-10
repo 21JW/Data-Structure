@@ -1,0 +1,4 @@
+﻿  Singly Linked List.c
+C:\Users\JR\source\Data Structure\Files\Link List\Singly Linked List\Singly Linked List modified\Singly Linked List\Singly Linked List\Singly Linked List.c(3,33): warning C4028: 形参 1 与声明不同
+C:\Users\JR\source\Data Structure\Files\Link List\Singly Linked List\Singly Linked List modified\Singly Linked List\Singly Linked List\Singly Linked List.c(34): warning C4716: “InitSinglyListNode”: 必须返回一个值
+  Singly Linked List.vcxproj -> C:\Users\JR\source\Data Structure\Files\Link List\Singly Linked List\Singly Linked List modified\Singly Linked List\Debug\Singly Linked List.exe

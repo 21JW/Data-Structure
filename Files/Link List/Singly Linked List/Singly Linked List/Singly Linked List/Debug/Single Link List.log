@@ -1,6 +1,0 @@
-﻿  Singly Linked list.c
-C:\Users\JR\source\Data Structure\Files\Link List\Single Link List\Single Link List\Single Link List\Singly Linked list.c(3,34): warning C4028: 形参 1 与声明不同
-  test.c
-C:\Users\JR\source\Data Structure\Files\Link List\Single Link List\Single Link List\Single Link List\test.c(6,8): warning C4013: “test02”未定义；假设外部返回 int
-  正在生成代码...
-  Single Link List.vcxproj -> C:\Users\JR\source\Data Structure\Files\Link List\Single Link List\Single Link List\Debug\Single Link List.exe
