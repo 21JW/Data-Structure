@@ -109,13 +109,13 @@ int test07()
 /*test delete function*/
 {
 	SListNode* phead = InitSinglyListNode();
-	SinglyListNodeDelete(phead, 1);
-	SinglyListPush_Back(phead, 1);
-	SinglyListPrint(phead);
-	SinglyListNodeDelete(phead, 8);
-	SinglyListPrint(phead);
-	SinglyListNodeDelete(phead, 1);
-	SinglyListPrint(phead);
+	//SinglyListNodeDelete(phead, 1);
+	//SinglyListPush_Back(phead, 1);
+	//SinglyListPrint(phead);
+	//SinglyListNodeDelete(phead, 8);
+	//SinglyListPrint(phead);
+	//SinglyListNodeDelete(phead, 1);
+	//SinglyListPrint(phead);
 	SinglyListPush_Back(phead, 1);
 	SinglyListPush_Back(phead, 2);
 	SinglyListPush_Back(phead, 3);

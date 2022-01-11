@@ -207,8 +207,8 @@ void SinglyListNodeDelete(SListNode* phead, SListDatatype x)
 	{
 		printf("Error:An empty List.Cannot delete a node.\n");
 	}
-	else if ((phead->next)->data == x)
-		/*case2:the first Node is the target*/
+	else if (((phead->next)->data) == x && ((phead->next)->next == NULL))
+		/*case2:there is only one node and it is the target*/
 	{
 		SListNode* firstNode = phead->next;
 		phead->next=NULL;
@@ -222,8 +222,8 @@ void SinglyListNodeDelete(SListNode* phead, SListDatatype x)
 	else
 		/*case4:more than 2 elements*/
 	{
-		SListNode* find = phead->next;
-		while ((find->next) != NULL)
+		SListNode* find = phead;
+		while ((find->next)!=NULL)
 		{
 			if (((find->next)->data) == x)
 		/*case4.1:more than 2 elements and find the data
@@ -235,9 +235,13 @@ void SinglyListNodeDelete(SListNode* phead, SListDatatype x)
 				signal = 1;
 				free(deleteNode);
 			}
-			find = find->next;
+			if ((find->next) != NULL)
+			{
+				find = find->next;
+			}
 		}
 		if (((find->next)==NULL) && (signal == 0))
+			/*case4.2:more than 2 elements but data does not exist.*/
 		{
 			printf("Error:data does not exist!\n");
 		}
