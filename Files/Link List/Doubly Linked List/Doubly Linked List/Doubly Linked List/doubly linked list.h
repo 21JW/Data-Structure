@@ -16,13 +16,21 @@ typedef struct ListNode
 
 LN* CreateNewNode(Listdatatype x);
 void printList(LN* phead);
-void NodeInit1(LN** pphead);
-LN* NodeInit2();
+LN* NodeInit();
 void ListPush_back(LN* phead, Listdatatype x);
 void ListPop_back(LN* phead);
 void ListPush_Front(LN* phead, Listdatatype x);
 void ListPop_Front(LN* phead);
-void ListInsert(LN* phead, Listdatatype x);
+void ListChange(LN* phead,Listdatatype x, Listdatatype y);
+void ListInsert(LN* phead,int x,Listdatatype y);
+void ListDelete1(LN* phead, Listdatatype x);
+//this function deletes all the nodes with value x;
+
+void ListDelete2(LN* phead, int x);
+//this function deletes the xth node;
+
+
+
 
 
 
